@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.mock-server:mockserver-netty:5.11.2'
+
+    implementation "org.apache.velocity:velocity-engine-core:2.2"
+    implementation "io.netty:netty-codec-http:4.1.53.Final"
+}

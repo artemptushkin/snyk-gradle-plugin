@@ -1,0 +1,59 @@
+
+Testing /Users/artemptushkin/JavaProjects/snyk-gradle-plugin/test/fixtures/transitive-as-direct...
+
+Tested 79 dependencies for known issues, found 10 issues, 133 vulnerable paths.
+
+
+Issues to fix by upgrading:
+
+  Upgrade io.netty:netty-codec-http@4.1.53.Final to io.netty:netty-codec-http@4.1.59.Final to fix
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1070799] in io.netty:netty-codec-http@4.1.53.Final
+    introduced by io.netty:netty-codec-http@4.1.53.Final and 3 other path(s)
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082234] in io.netty:netty-common@4.1.53.Final
+    introduced by io.netty:netty-handler@4.1.53.Final > io.netty:netty-common@4.1.53.Final and 99 other path(s)
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082236] in io.netty:netty-transport@4.1.53.Final
+    introduced by io.netty:netty-handler@4.1.53.Final > io.netty:netty-transport@4.1.53.Final and 19 other path(s)
+
+  Upgrade io.netty:netty-handler@4.1.53.Final to io.netty:netty-handler@4.1.59.Final to fix
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082235] in io.netty:netty-handler@4.1.53.Final
+    introduced by io.netty:netty-handler@4.1.53.Final
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082234] in io.netty:netty-common@4.1.53.Final
+    introduced by io.netty:netty-handler@4.1.53.Final > io.netty:netty-common@4.1.53.Final and 99 other path(s)
+  ✗ Information Disclosure [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1082236] in io.netty:netty-transport@4.1.53.Final
+    introduced by io.netty:netty-handler@4.1.53.Final > io.netty:netty-transport@4.1.53.Final and 19 other path(s)
+
+  Upgrade org.apache.httpcomponents:httpclient@4.5.2 to org.apache.httpcomponents:httpclient@4.5.13 to fix
+  ✗ Improper Input Validation [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEHTTPCOMPONENTS-1048058] in org.apache.httpcomponents:httpclient@4.5.2
+    introduced by org.apache.httpcomponents:httpclient@4.5.2
+  ✗ Directory Traversal [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEHTTPCOMPONENTS-31517] in org.apache.httpcomponents:httpclient@4.5.2
+    introduced by org.apache.httpcomponents:httpclient@4.5.2
+
+  Upgrade org.apache.velocity:velocity-engine-core@2.2 to org.apache.velocity:velocity-engine-core@2.3 to fix
+  ✗ Arbitrary Code Execution (new) [High Severity][https://snyk.io/vuln/SNYK-JAVA-ORGAPACHEVELOCITY-1083992] in org.apache.velocity:velocity-engine-core@2.2
+    introduced by org.apache.velocity:velocity-engine-core@2.2 and 2 other path(s)
+
+
+Issues with no direct upgrade or patch:
+  ✗ Improper Certificate Validation [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-IONETTY-1042268] in io.netty:netty-handler@4.1.53.Final
+    introduced by io.netty:netty-handler@4.1.53.Final
+  No upgrade or patch available
+  ✗ Denial of Service (DoS) [Medium Severity][https://snyk.io/vuln/SNYK-JAVA-NETMINIDEV-1078499] in net.minidev:json-smart@2.3
+    introduced by net.minidev:json-smart@2.3
+  No upgrade or patch available
+
+
+License issues:
+
+  ✗ MPL-2.0 license (new) [Medium Severity][https://snyk.io/vuln/snyk:lic:maven:org.mozilla:rhino:MPL-2.0] in org.mozilla:rhino@1.7.7.2
+    introduced by com.github.java-json-tools:json-schema-core@1.2.14 > org.mozilla:rhino@1.7.7.2
+
+
+
+Organization:      jolt
+Package manager:   gradle
+Target file:       build.gradle
+Project name:      transitive-as-direct
+Open source:       no
+Project path:      /Users/artemptushkin/JavaProjects/snyk-gradle-plugin/test/fixtures/transitive-as-direct
+Licenses:          enabled
+
